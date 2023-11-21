@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/NavBar";
 import {
   faFileDownload,
   faFileSignature,
@@ -26,10 +25,10 @@ const About = () => {
     },
     {
       id: 3,
-      title: "Project 3",
-      description: "Description of Project 3.",
+      title: "Budget Tracker App",
+      description: "Budget Tracker App",
       image: "/images/hero-image.png",
-      link: "https://example.com/project1",
+      link: "https://budget-tracker-8cvn.vercel.app/",
     },
   ];
 
@@ -39,9 +38,21 @@ const About = () => {
       <div className="container mx-auto p-8 font-serif font-semibold">
         <div className="max-w-2xl mx-auto text-center mb-8 bg-gradient-to-r from-purple-400 to-pink-800 bg-clip-text text-transparent">
           <h1 className="text-3xl mb-4">Welcome to my personal space!</h1>
-          {/* <p className="text-lg">
-            {"Here are few quick links about the projects that I've done"}
-          </p> */}
+          <p className="text-lg mb-3">Who am I? </p>
+          <p>
+            I am a full stack developer with a passion for learning and
+            understanding of programming languages and frameworks. I am a full
+            stack developer with a passion for learning and understanding of
+            programming languages and frameworks. I am a full stack developer
+            with a passion for learning and understanding of programming
+            languages and frameworks.
+          </p>
+          <p className="mt-5">Skill Set:</p>
+          <ul className="flex space-x-4 item-center justify-center">
+            <li>• MERN</li>
+            <li>• MERN</li>
+            <li>• MERN</li>
+          </ul>
         </div>
 
         <div className="flex justify-center space-x-4 mb-8">
@@ -79,6 +90,13 @@ const About = () => {
             </div>
           ))}
         </div>
+        <div className="flex justify-center">
+            <Link
+              href=""
+              className="w-1/4 text-center p-2 rounded-md text-md font-semibold font-serif bg-gradient-to-r from-purple-700 to-pink-800 hover:from-pink-700 hover:to-purple-800 text-white">
+              {"Read More -->"}
+            </Link>
+          </div>
       </div>
     </div>
   );
