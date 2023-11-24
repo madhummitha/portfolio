@@ -83,11 +83,11 @@ const ContactForm = ({ formData, setFormData, handleChange, handleSubmit }) => {
           </div>
           <p className="text-lg font-semibold mb-2">Madhummitha R</p>
           <div className="flex items-center justify-center space-x-2 mb-2">
-            <FaPhone className="text-xl text-purple-300" />
+            <FaPhone className="text-l text-purple-300" />
             <p className="text-lg">9962301619</p>
           </div>
           <div className="flex items-center justify-center space-x-2 mb-2">
-            <FaEnvelope className="text-xl text-purple-300" />
+            <FaEnvelope className="text-l text-purple-300" />
             <p className="text-lg">madhummithar@gmail.com</p>
           </div>
 

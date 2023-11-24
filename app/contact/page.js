@@ -3,6 +3,8 @@ import React from "react";
 import ContactForm from "../components/ContactForm";
 import { useState } from "react";
 import axios from "axios";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -35,10 +37,9 @@ const handleSubmit = async (e, formData, setFormData) => {
       email: "",
       phone: "",
     });
-    console.log("after axios.post", formData, setFormData);
+    toast.success("Form submitted successfully! 😄");
   } catch (error) {
-    console.log("Error submitting form", error);
-    alert("Error submitting form");
+    toast.error("Please provide all the details!");
   }
 };
 

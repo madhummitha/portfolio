@@ -3,16 +3,17 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-800 p-4 fixed w-full top-0 z-50">
+    <nav className="bg-gray-900 pr-4 fixed w-full top-0 z-50">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <Link href="/" className="text-white text-lg font-semibold">
-          <Image
-            src="/images/logo2.jpg"
-            alt="logo image"
-            //className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            width={50}
-            height={50}
-          />
+          <div className="text-white">
+            <Image
+              src="/images/logo-img.png"
+              alt="logo image"
+              width={60}
+              height={60}
+            />
+          </div>
         </Link>
 
         <div>
@@ -25,6 +26,11 @@ const Navbar = () => {
             <li>
               <Link href="/about" className="text-white p-2">
                 About
+              </Link>
+            </li>
+            <li>
+              <Link href="/projects" className="text-white p-2">
+                Projects
               </Link>
             </li>
             <li>
