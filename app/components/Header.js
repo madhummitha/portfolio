@@ -12,16 +12,17 @@ const Header = () => {
           A Passionate Software Developer
         </p>
       </div>
-      <div className="col-span-5 place-self-center mt-4 lg:mt-0 lg:w-[400px] lg:h-[400px] w-[250px] h-[250px]  relative">
-        <Image
-          src="/images/Pics.png"
-          alt="hero image"
-          className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-          // className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-          width={250}
-          height={200}
-        />
-      </div>
+      {/* <div className="col-span-5 place-self-center mt-4 lg:mt-0 lg:w-[400px] lg:h-[400px] w-[250px] h-[250px]  relative"> */}
+      <Image
+        src="/images/Pics.png"
+        alt="hero image"
+        // className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+        className="rounded-full w-60 h-60 object-cover"
+        style={{ objectPosition: "0% 10%" }}
+        width={250}
+        height={250}
+      />
+      {/* </div> */}
     </div>
   );
 };

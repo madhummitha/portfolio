@@ -14,42 +14,42 @@ const About = () => {
     {
       id: 1,
       title: "React Chat App",
-      description: "React Chat App using Firebase Authentication.",
+      description: "A Chatting App using Firebase Authentication.",
       image: "/images/ChatApp.png",
       link: "https://react-chat-app-gold.vercel.app/",
     },
     {
       id: 2,
       title: "Book Management App",
-      description: "Book Management App",
+      description: "A Book Management App with CRUD Operations",
       image: "/images/Book.png",
       link: "https://book-management-app-omega.vercel.app/",
     },
     {
       id: 3,
       title: "Budget Tracker App",
-      description: "Budget Tracker App",
+      description: "A Budget Tracking App with CRUD Operations",
       image: "/images/Budget.png",
       link: "https://budget-tracker-8cvn.vercel.app/",
     },
     {
       id: 4,
       title: "ToDo App",
-      description: "Basic CRUD TODO App",
+      description: "A Basic TODO App with CRUD Operations",
       image: "/images/ToDo.png",
       link: "https://webdev-projects-flni.vercel.app/",
     },
     {
       id: 5,
       title: "MTunes App",
-      description: "MTunes App",
+      description: "A Clone of MTunes App using JS",
       image: "/images/MTunes.png",
       link: "https://webdev-projects-gamma.vercel.app/",
     },
     {
       id: 6,
       title: "Social Modia Posts App",
-      description: "Basic CRUD App",
+      description: "A Basic Posting App with CRUD Operations",
       image: "/images/Post.png",
       link: "https://webdev-projects-wxq6.vercel.app/",
     },
@@ -58,9 +58,9 @@ const About = () => {
   return (
     <div>
       {/* <Navbar /> */}
-      <div className="container mx-auto p-8 font-serif font-semibold ">
-        <div className="max-w-2xl mx-auto text-center mb-10 text-purple-100 mt-10 text-3xl">
-          PROJECTS
+      <div className="container mx-auto p-8 font-serif font-semibold">
+        <div className="max-w-2xl mx-auto text-center mb-10 text-purple-100 mt-12 text-3xl italic">
+          Projects
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-gradient-to-r from-purple-400 to-pink-800 bg-clip-text text-transparent">

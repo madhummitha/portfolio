@@ -65,7 +65,7 @@ const About = () => {
     <div>
       <div className="container mx-auto p-8 font-serif font-semibold">
         <div className="max-w-2xl mx-auto text-center mb-8 text-purple-100">
-          <p className="text-3xl mt-10 mb-3">Hi there!</p>
+          <p className="text-3xl mt-12 mb-3 italic">Hi there!</p>
           {/* <p className="text-2xl mb-4">Welcome to my personal space!</p> */}
           <p>
             {
@@ -80,7 +80,9 @@ const About = () => {
           </p>
 
           <div className="mt-5">
-            <p>Top Skill Sets:</p>
+            <p className="underline underline-offset-2 italic">
+              Top Skill Sets:
+            </p>
             <div className="flex space-x-4 p-4">
               <div className="border p-2 rounded-md">
                 <FaReact className="text-l text-purple-300" />
@@ -115,7 +117,7 @@ const About = () => {
             className="bg-purple-900 text-white p-2 rounded-md flex items-center"
           >
             <FaAddressBook
-              className="text-3xl text-white mr-2"
+              className="text-2xl text-white mr-2"
               alt="Contact Logo"
               aria-label="Contact Logo"
             />
@@ -127,14 +129,16 @@ const About = () => {
             className="bg-pink-900 text-white p-2 rounded-md flex items-center"
           >
             <FaFileArrowDown
-              className="text-3xl text-white mr-2"
+              className="text-2xl text-white mr-2"
               alt="Contact Logo"
               aria-label="Contact Logo"
             />
             Download CV
           </a>
         </div>
-
+        <div className="flex items-center justify-center">
+          <hr className="w-2/3  border-gray-800" />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-gradient-to-r from-purple-400 to-pink-800 bg-clip-text text-transparent mt-20">
           {projects.map((project) => (
             <div key={project.id} className="mb-8">
