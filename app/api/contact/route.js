@@ -8,7 +8,7 @@ export async function POST(req) {
 
   const body = await req.json();
 
-    const { name, email, phone } = body;
+    const { name, email, message } = body;
     console.log("req body logging", body);
 
     try {
@@ -16,7 +16,7 @@ export async function POST(req) {
       const newContact = await Contact.create({
         name,
         email,
-        phone,
+        message,
       });
 
       return NextResponse.json({ message: "Contact added Successfully!" }, { status: 201 });

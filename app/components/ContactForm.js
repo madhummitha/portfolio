@@ -7,7 +7,7 @@ import { handleChange, handleSubmit } from "../../app/contact/page";
 const ContactForm = ({ formData, setFormData, handleChange, handleSubmit }) => {
   return (
     <div>
-      <div className="container mx-auto flex items-center justify-center h-screen">
+      <div className="container mx-auto flex flex-wrap items-center justify-center h-screen">
         <form
           className="flex flex-col items-center p-4 w-full max-w-md"
           onSubmit={(e) => handleSubmit(e, formData, setFormData)}
@@ -49,16 +49,17 @@ const ContactForm = ({ formData, setFormData, handleChange, handleSubmit }) => {
           </div>
           <div className="mb-4 w-full">
             <label
-              htmlFor="phone"
+              htmlFor="message"
               className="block text-md font-semibold font-serif bg-gradient-to-r from-purple-400 to-pink-900 bg-clip-text text-transparent"
             >
-              Phone Number
+              Your Message for me
             </label>
-            <input
+            <textarea
+              rows={3}
               type="tel"
-              id="phone"
-              name="phone"
-              value={formData.phone}
+              id="message"
+              name="message"
+              value={formData.message}
               onChange={(e) => handleChange(e, formData, setFormData)}
               className="mt-1 p-2 border rounded-md w-full text-black"
             />
@@ -83,11 +84,11 @@ const ContactForm = ({ formData, setFormData, handleChange, handleSubmit }) => {
           </div>
           <p className="text-lg font-semibold mb-2">Madhummitha R</p>
           <div className="flex items-center justify-center space-x-2 mb-2">
-            <FaPhone className="text-l text-purple-300" />
+            <FaPhone className="text-l text-purple-100" />
             <p className="text-lg">9962301619</p>
           </div>
           <div className="flex items-center justify-center space-x-2 mb-2">
-            <FaEnvelope className="text-l text-purple-300" />
+            <FaEnvelope className="text-l text-purple-100" />
             <p className="text-lg">madhummithar@gmail.com</p>
           </div>
 

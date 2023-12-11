@@ -1,37 +1,70 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaAddressBook, FaFileArrowDown } from "react-icons/fa6";
+import {
+  FaAddressBook,
+  FaFileArrowDown,
+  FaGithub,
+  FaReact,
+} from "react-icons/fa6";
+import {
+  TbBrandCSharp,
+  TbBrandMysql,
+  TbBrandNextjs,
+  TbDeviceAnalytics,
+  TbDevices,
+} from "react-icons/tb";
 
 const About = () => {
   const projects = [
     {
       id: 1,
       title: "React Chat App",
-      description: "React Chat App using Firebase Authentication.",
-      image: "/images/hero-image.png",
+      description: "A Chatting App using Firebase Authentication.",
+      image: "/images/ChatApp.png",
       link: "https://react-chat-app-gold.vercel.app/",
     },
     {
       id: 2,
       title: "Book Management App",
-      description: "Book Management App",
-      image: "/images/hero-image.png",
+      description: "A Book Management App with CRUD Operations",
+      image: "/images/Book.png",
       link: "https://book-management-app-omega.vercel.app/",
     },
     {
       id: 3,
       title: "Budget Tracker App",
-      description: "Budget Tracker App",
-      image: "/images/hero-image.png",
+      description: "A Budget Tracking App with CRUD Operations",
+      image: "/images/Budget.png",
       link: "https://budget-tracker-8cvn.vercel.app/",
+    },
+    {
+      id: 4,
+      title: "ToDo App",
+      description: "A Basic TODO App with CRUD Operations",
+      image: "/images/ToDo.png",
+      link: "https://webdev-projects-flni.vercel.app/",
+    },
+    {
+      id: 5,
+      title: "MTunes App",
+      description: "A Clone of MTunes App using JS",
+      image: "/images/MTunes.png",
+      link: "https://webdev-projects-gamma.vercel.app/",
+    },
+    {
+      id: 6,
+      title: "Social Modia Posts App",
+      description: "A Basic Posting App with CRUD Operations",
+      image: "/images/Post.png",
+      link: "https://webdev-projects-wxq6.vercel.app/",
     },
   ];
 
   return (
     <div>
       <div className="container mx-auto p-8 font-serif font-semibold">
-        <div className="max-w-2xl mx-auto text-center mb-8 bg-gradient-to-r from-purple-400 to-pink-800 bg-clip-text text-transparent">
+        <div className="max-w-2xl mx-auto text-center mb-8 text-purple-100">
           <p className="text-3xl mt-10 mb-3">Hi there!</p>
           {/* <p className="text-2xl mb-4">Welcome to my personal space!</p> */}
           <p>
@@ -45,13 +78,35 @@ const About = () => {
               "Let's collaborate and bring your ideas to life through the power of clean and efficient software solutions."
             }
           </p>
-          <p className="mt-5">Top Skill Sets:</p>
-          <ul className="flex space-x-4 item-center justify-center">
-            <li>➢ MERN</li>
-            <li>➢ Next.js</li>
-            <li>➢ .NET</li>
-            <li>➢ SQL</li>
-          </ul>
+
+          <div className="mt-5">
+            <p>Top Skill Sets:</p>
+            <div className="flex space-x-4 p-4">
+              <div className="border p-2 rounded-md">
+                <FaReact className="text-l text-purple-300" />
+                MERN
+              </div>
+              <div className="border p-2 rounded-md">
+                <TbBrandNextjs className="text-l text-purple-300" /> Next.js
+              </div>
+              <div className="border p-2 rounded-md">
+                <TbDeviceAnalytics className="text-l text-purple-300" /> Data
+                Analytics
+              </div>
+              <div className="border p-2 rounded-md">
+                <TbBrandCSharp className="text-l text-purple-300" /> .NET
+              </div>
+              <div className="border p-2 rounded-md">
+                <TbBrandMysql className="text-l text-purple-300" /> SQL
+              </div>
+              <div className="border p-2 rounded-md">
+                <TbDevices className="text-l text-purple-300" /> UI/UX
+              </div>
+              <div className="border p-2 rounded-md">
+                <FaGithub className="text-l text-purple-300" /> Git
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="flex justify-center space-x-4 mb-8">
@@ -80,7 +135,7 @@ const About = () => {
           </a>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-gradient-to-r from-purple-400 to-pink-800 bg-clip-text text-transparent">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-gradient-to-r from-purple-400 to-pink-800 bg-clip-text text-transparent mt-20">
           {projects.map((project) => (
             <div key={project.id} className="mb-8">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
@@ -91,8 +146,10 @@ const About = () => {
                   alt={project.title}
                   className="mx-auto rounded-md"
                 />
-                <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
-                <p className="text-sm">{project.description}</p>
+                <h3 className="text-lg font-semibold mb-2 text-center">
+                  {project.title}
+                </h3>
+                <p className="text-sm text-center">{project.description}</p>
               </a>
             </div>
           ))}

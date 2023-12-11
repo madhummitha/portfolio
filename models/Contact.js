@@ -9,7 +9,7 @@ const contactSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  phone: {
+  message: {
     type: String,
     // required: true,
   },
@@ -17,6 +17,5 @@ const contactSchema = new mongoose.Schema({
   // updatedAt: {},
 });
 
-
-export default mongoose.models.Contact || mongoose.model("Contact", contactSchema);
-
+export default mongoose.models.Contact ||
+  mongoose.model("Contact", contactSchema);

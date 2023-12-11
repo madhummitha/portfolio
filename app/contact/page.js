@@ -10,7 +10,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
+    message: "",
   });
   return (
     <ContactForm
@@ -35,7 +35,7 @@ const handleSubmit = async (e, formData, setFormData) => {
     setFormData({
       name: "",
       email: "",
-      phone: "",
+      message: "",
     });
     toast.success("Form submitted successfully! 😄");
   } catch (error) {
