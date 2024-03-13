@@ -16,14 +16,14 @@ const About = () => {
       title: "Areen Order Hub",
       description: "An eCommerce platform built with MERN Stack.",
       image: "/images/Areen.png",
-      link: "https://intranet.areen.store/",
+      link: "/docs/HR CRM.pdf",
     },
     {
       id: 2,
       title: "Hiring Management Syatem",
       description: "An hiring management system built with MERN Stack.",
       image: "/images/Hikers.png",
-      link: "http://3.110.196.84:3000/",
+      link: "/docs/HR CRM.pdf",
     },
     {
       id: 3,

@@ -22,14 +22,14 @@ const About = () => {
       title: "Areen Order Hub",
       description: "An eCommerce platform built with MERN Stack.",
       image: "/images/Areen.png",
-      link: "https://intranet.areen.store/",
+      link: "/docs/HR CRM.pdf",
     },
     {
       id: 2,
       title: "Hiring Management Syatem",
       description: "An hiring management system built with MERN Stack.",
       image: "/images/Hikers.png",
-      link: "http://3.110.196.84:3000/",
+      link: "/docs/HR CRM.pdf",
     },
     {
       id: 3,
@@ -139,8 +139,9 @@ const About = () => {
             Know more?
           </Link>
           <a
-            href="/cv/Madhummithas_Resume.pdf"
-            download="Madhummithas_Resume.pdf"
+            href="/docs/Madhummithas_Resume.pdf"
+            target="_blank"
+            // download="Madhummithas_Resume.pdf"
             className="bg-pink-900 text-white p-2 rounded-md flex items-center"
           >
             <FaFileArrowDown
