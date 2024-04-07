@@ -38,6 +38,15 @@ const Navbar = () => {
                 Contact
               </Link>
             </li>
+            <li>
+              <Link
+                href="https://blog-madhummithas-projects.vercel.app/"
+                target="_blank"
+                className="text-white p-2"
+              >
+                Blog
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
