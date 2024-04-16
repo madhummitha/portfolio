@@ -7,105 +7,85 @@ import {
   FaFileArrowDown,
   FaGithub,
   FaJava,
-  FaJs,
-  FaNodeJs,
-  FaReact,
 } from "react-icons/fa6";
-import {
-  TbBrandCSharp,
-  TbBrandDocker,
-  TbBrandJavascript,
-  TbBrandMongodb,
-  TbBrandMysql,
-  TbBrandNextjs,
-  TbBrandReact,
-  TbDeviceAnalytics,
-  TbDevices,
-  TbPackages,
-} from "react-icons/tb";
 import {
   SiAmazonaws,
   SiCsharp,
   SiDocker,
   SiFigma,
+  SiGithub,
   SiGithubactions,
   SiGoogleanalytics,
-  SiInternetexplorer,
   SiJavascript,
   SiJenkins,
-  SiKibana,
   SiKubernetes,
-  SiLinux,
   SiMongodb,
-  SiNewrelic,
   SiNextdotjs,
   SiNginx,
   SiNodedotjs,
   SiReact,
   SiRedis,
-  SiWindowsterminal,
 } from "react-icons/si";
-import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 
 const About = () => {
-  const projects = [
-    {
-      id: 1,
-      title: "Areen Order Hub",
-      description: "An eCommerce platform built with MERN Stack.",
-      image: "/images/Areen.png",
-      link: "/docs/HR CRM.pdf",
-    },
-    {
-      id: 2,
-      title: "Hiring Management Syatem",
-      description: "An hiring management system built with MERN Stack.",
-      image: "/images/Hikers.png",
-      link: "/docs/HR CRM.pdf",
-    },
-    {
-      id: 3,
-      title: "React Chat App",
-      description: "A Chatting App using Firebase Authentication.",
-      image: "/images/ChatApp.png",
-      link: "https://react-chat-app-gold.vercel.app/",
-    },
-    {
-      id: 4,
-      title: "Book Management App",
-      description: "A Book Management App with CRUD Operations",
-      image: "/images/Book.png",
-      link: "https://book-management-app-omega.vercel.app/",
-    },
-    {
-      id: 5,
-      title: "Budget Tracker App",
-      description: "A Budget Tracking App with CRUD Operations",
-      image: "/images/Budget.png",
-      link: "https://budget-tracker-8cvn.vercel.app/",
-    },
-    {
-      id: 6,
-      title: "ToDo App",
-      description: "A Basic TODO App with CRUD Operations",
-      image: "/images/ToDo.png",
-      link: "https://webdev-projects-flni.vercel.app/",
-    },
-    {
-      id: 7,
-      title: "MTunes App",
-      description: "A Clone of MTunes App using JS",
-      image: "/images/MTunes.png",
-      link: "https://webdev-projects-gamma.vercel.app/",
-    },
-    {
-      id: 8,
-      title: "Social Modia Posts App",
-      description: "A Basic Posting App with CRUD Operations",
-      image: "/images/Post.png",
-      link: "https://webdev-projects-wxq6.vercel.app/",
-    },
-  ];
+  // const projects = [
+  //   {
+  //     id: 1,
+  //     title: "Areen Order Hub",
+  //     description: "An eCommerce platform built with MERN Stack.",
+  //     image: "/images/Areen.png",
+  //     link: "/docs/HR CRM.pdf",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Hiring Management Syatem",
+  //     description: "An hiring management system built with MERN Stack.",
+  //     image: "/images/Hikers.png",
+  //     link: "/docs/HR CRM.pdf",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "React Chat App",
+  //     description: "A Chatting App using Firebase Authentication.",
+  //     image: "/images/ChatApp.png",
+  //     link: "https://react-chat-app-gold.vercel.app/",
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Book Management App",
+  //     description: "A Book Management App with CRUD Operations",
+  //     image: "/images/Book.png",
+  //     link: "https://book-management-app-omega.vercel.app/",
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "Budget Tracker App",
+  //     description: "A Budget Tracking App with CRUD Operations",
+  //     image: "/images/Budget.png",
+  //     link: "https://budget-tracker-8cvn.vercel.app/",
+  //   },
+  //   {
+  //     id: 6,
+  //     title: "ToDo App",
+  //     description: "A Basic TODO App with CRUD Operations",
+  //     image: "/images/ToDo.png",
+  //     link: "https://webdev-projects-flni.vercel.app/",
+  //   },
+  //   {
+  //     id: 7,
+  //     title: "MTunes App",
+  //     description: "A Clone of MTunes App using JS",
+  //     image: "/images/MTunes.png",
+  //     link: "https://webdev-projects-gamma.vercel.app/",
+  //   },
+  //   {
+  //     id: 8,
+  //     title: "Social Modia Posts App",
+  //     description: "A Basic Posting App with CRUD Operations",
+  //     image: "/images/Post.png",
+  //     link: "https://webdev-projects-wxq6.vercel.app/",
+  //   },
+  // ];
 
   return (
     <div>
@@ -128,7 +108,7 @@ const About = () => {
               <p className="underline underline-offset-2 italic mb-2">
                 Frameworks & Languages:
               </p>
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="grid grid-cols-3 gap-4">
                 <div className="flex items-center">
                   <SiReact className="text-l text-purple-300" />
                   <span className="ml-2">React.Js</span>
@@ -150,10 +130,6 @@ const About = () => {
                   <span className="ml-2">MongoDB</span>
                 </div>
                 <div className="flex items-center">
-                  <SiCsharp className="text-l text-purple-300" />
-                  <span className="ml-2">C#</span>
-                </div>
-                <div className="flex items-center">
                   <FaJava className="text-l text-purple-300" />
                   <span className="ml-2">Java</span>
                 </div>
@@ -161,14 +137,17 @@ const About = () => {
                   <FaDatabase className="text-l text-purple-300" />
                   <span className="ml-2">SQL</span>
                 </div>
+                {/* <div className="flex items-center">
+                  <SiCsharp className="text-l text-purple-300" />
+                  <span className="ml-2">C#</span>
+                </div> */}
               </div>
             </div>
-
-            <div className="text-center mt-5">
+            <div className="text-center mt-3">
               <p className="underline underline-offset-2 italic mb-2">
                 DevOps & Infrastructure:
               </p>
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="grid grid-cols-3 gap-4">
                 <div className="flex items-center">
                   <SiDocker className="text-l text-purple-300" />
                   <span className="ml-2">Docker</span>
@@ -182,30 +161,29 @@ const About = () => {
                   <span className="ml-2">NGINX</span>
                 </div>
                 <div className="flex items-center">
-                  <FaGithub className="text-l text-purple-300" />
-                  <span className="ml-2">Git</span>
+                  <SiGithub className="text-l text-purple-300" />
+                  <span className="ml-2">GIT</span>
                 </div>
                 <div className="flex items-center">
                   <SiGithubactions className="text-l text-purple-300" />
-                  <span className="ml-2">CI/CD Pipeline</span>
+                  <span className="ml-2">CI/CD</span>
                 </div>
                 <div className="flex items-center">
                   <SiRedis className="text-l text-purple-300" />
                   <span className="ml-2">Redis</span>
                 </div>
-
                 <div className="flex items-center">
                   <SiAmazonaws className="text-l text-purple-300" />
                   <span className="ml-2">AWS</span>
                 </div>
-                <div className="flex items-center">
-                  <SiJenkins className="text-l text-purple-300" />
-                  <span className="ml-2">Jenkins</span>
-                </div>
+                {/* <div className="flex items-center">
+                  <SiCsharp className="text-l text-purple-300" />
+                  <span className="ml-2">C#</span>
+                </div> */}
               </div>
             </div>
 
-            <div className="text-center mt-5">
+            <div className="text-center mt-3">
               <p className="underline underline-offset-2 italic mb-2">
                 Others:
               </p>

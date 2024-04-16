@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <ToastContainer />
         {children}
-        <Analytics />npm run dev
+        <Analytics />
       </body>
     </html>
   );
