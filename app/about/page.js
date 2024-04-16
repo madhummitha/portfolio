@@ -123,173 +123,6 @@ const About = () => {
               "Let's collaborate and bring your ideas to life through the power of clean and efficient software solutions."
             }
           </p>
-
-          {/* <div className="mt-5">
-            <p className="underline underline-offset-2 italic">
-              Top Skill Sets:
-            </p>
-            <div className="flex space-x-4 p-4">
-              <div className="border p-2 rounded-md">
-                <FaReact className="text-l text-purple-300" />
-                MERN
-              </div>
-              <div className="border p-2 rounded-md">
-                <TbBrandNextjs className="text-l text-purple-300" /> Next.js
-              </div>
-              <div className="border p-2 rounded-md">
-                <TbBrandCSharp className="text-l text-purple-300" /> Docker
-              </div>
-              <div className="border p-2 rounded-md">
-                <TbBrandCSharp className="text-l text-purple-300" /> Kubernetes
-              </div>
-              <div className="border p-2 rounded-md">
-                <TbBrandCSharp className="text-l text-purple-300" /> NGINX
-              </div>
-              <div className="border p-2 rounded-md">
-                <TbBrandCSharp className="text-l text-purple-300" /> .NET
-              </div>
-              <div className="border p-2 rounded-md">
-                <TbBrandMysql className="text-l text-purple-300" /> SQL
-              </div>
-              <div className="border p-2 rounded-md">
-                <TbDevices className="text-l text-purple-300" /> UI/UX
-              </div>
-              <div className="border p-2 rounded-md">
-                <FaGithub className="text-l text-purple-300" /> Git
-              </div>
-              <div className="border p-2 rounded-md">
-                <TbDeviceAnalytics className="text-l text-purple-300" /> Data
-                Analytics
-              </div>
-            </div>
-          </div> */}
-          {/* <div className="mt-5 flex flex-col items-center">
-            <div className="text-center mt-5">
-              <p className="underline underline-offset-2 italic mb-2">
-                DevOps & Infrastructure:
-              </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <div className="border p-2 rounded-md">
-                  <TbBrandCSharp className="text-l text-purple-300" />
-                  Docker
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbBrandCSharp className="text-l text-purple-300" />
-                  Kubernetes
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbBrandCSharp className="text-l text-purple-300" />
-                  NGINX
-                </div>
-                <div className="border p-2 rounded-md">
-                  <FaGithub className="text-l text-purple-300" />
-                  Git
-                </div>
-                <div className="border p-2 rounded-md">
-                  <FaGithub className="text-l text-purple-300" />
-                  CI/CD Pipeline
-                </div>
-                <div className="border p-2 rounded-md">
-                  <FaGithub className="text-l text-purple-300" />
-                  Redis
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbDeviceAnalytics className="text-l text-purple-300" />
-                  New Relic
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbDeviceAnalytics className="text-l text-purple-300" />
-                  Kibana
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbDevices className="text-l text-purple-300" />
-                  AWS
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbBrandCSharp className="text-l text-purple-300" />
-                  Jenkins
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbBrandCSharp className="text-l text-purple-300" />
-                  Unix Shell Scripting
-                </div>
-              </div>
-            </div>
-            <div className="text-center">
-              <p className="underline underline-offset-2 italic mb-2">
-                Frameworks & Languages:
-              </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <div className="border p-2 rounded-md">
-                  <FaReact className="text-l text-purple-300" />
-                  React.Js
-                </div>
-                <div className="border p-2 rounded-md">
-                  <FaReact className="text-l text-purple-300" />
-                  JavaScript
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbBrandNextjs className="text-l text-purple-300" />
-                  Next.Js
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbBrandMysql className="text-l text-purple-300" />
-                  ASP.NET
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbBrandMysql className="text-l text-purple-300" />
-                  Node.Js
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbBrandMysql className="text-l text-purple-300" />
-                  MongoDB
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbBrandMysql className="text-l text-purple-300" />
-                  C#
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbBrandMysql className="text-l text-purple-300" />
-                  Java
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbBrandMysql className="text-l text-purple-300" />
-                  SQL
-                </div>
-              </div>
-            </div>
-            <div className="text-center">
-              <p className="underline underline-offset-2 italic mb-2">
-                Others:{" "}
-              </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <div className="border p-2 rounded-md">
-                  <FaReact className="text-l text-purple-300" />
-                  Figma
-                </div>
-                <div className="border p-2 rounded-md">
-                  <FaReact className="text-l text-purple-300" />
-                  Data Analytics
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbBrandNextjs className="text-l text-purple-300" />
-                  Project Management
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbBrandMysql className="text-l text-purple-300" />
-                  SSIS Packages
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbBrandMysql className="text-l text-purple-300" />
-                  Windows Services
-                </div>
-                <div className="border p-2 rounded-md">
-                  <TbBrandMysql className="text-l text-purple-300" />
-                  IIS
-                </div>
-              </div>
-            </div>
-          </div> */}
           <div className="mt-5 flex flex-col items-center">
             <div className="text-center">
               <p className="underline underline-offset-2 italic mb-2">
@@ -360,14 +193,7 @@ const About = () => {
                   <SiRedis className="text-l text-purple-300" />
                   <span className="ml-2">Redis</span>
                 </div>
-                <div className="flex items-center">
-                  <SiNewrelic className="text-l text-purple-300" />
-                  <span className="ml-2">New Relic</span>
-                </div>
-                <div className="flex items-center">
-                  <SiKibana className="text-l text-purple-300" />
-                  <span className="ml-2">Kibana</span>
-                </div>
+
                 <div className="flex items-center">
                   <SiAmazonaws className="text-l text-purple-300" />
                   <span className="ml-2">AWS</span>
@@ -375,10 +201,6 @@ const About = () => {
                 <div className="flex items-center">
                   <SiJenkins className="text-l text-purple-300" />
                   <span className="ml-2">Jenkins</span>
-                </div>
-                <div className="flex items-center">
-                  <SiLinux className="text-l text-purple-300" />
-                  <span className="ml-2">Unix Scripting</span>
                 </div>
               </div>
             </div>
@@ -395,22 +217,6 @@ const About = () => {
                 <div className="flex items-center">
                   <SiGoogleanalytics className="text-l text-purple-300" />
                   <span className="ml-2">Data Analytics</span>
-                </div>
-                <div className="flex items-center">
-                  <AiOutlineFundProjectionScreen className="text-l text-purple-300" />
-                  <span className="ml-2">Project Management</span>
-                </div>
-                <div className="flex items-center">
-                  <TbPackages className="text-l text-purple-300" />
-                  <span className="ml-2">SSIS Packages</span>
-                </div>
-                <div className="flex items-center">
-                  <SiWindowsterminal className="text-l text-purple-300" />
-                  <span className="ml-2">Windows Services</span>
-                </div>
-                <div className="flex items-center">
-                  <SiInternetexplorer className="text-l text-purple-300" />
-                  <span className="ml-2">IIS</span>
                 </div>
               </div>
             </div>
