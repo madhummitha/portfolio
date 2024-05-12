@@ -20,7 +20,7 @@ const About = () => {
     },
     {
       id: 2,
-      title: "Hiring Management Syatem",
+      title: "Hiring Management System",
       description: "An hiring management system built with MERN Stack.",
       image: "/images/Hikers.png",
       link: "/docs/HR CRM.pdf",
