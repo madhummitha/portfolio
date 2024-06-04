@@ -40,7 +40,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="https://blog-madhummithas-projects.vercel.app/"
+                href="https://madhummitha-blog.vercel.app/"
                 target="_blank"
                 className="text-white p-2"
               >
