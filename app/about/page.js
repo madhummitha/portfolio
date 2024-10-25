@@ -3,7 +3,7 @@ import Link from "next/link";
 import {
   FaAddressBook,
   FaDatabase,
-  FaFileArrowDown,
+  FaFileLines,
   FaGithub,
   FaJava,
 } from "react-icons/fa6";
@@ -149,7 +149,7 @@ const About = () => {
             target="_blank"
             className="bg-pink-900 text-white p-2 rounded-md flex items-center"
           >
-            <FaFileArrowDown
+            <FaFileLines
               className="text-2xl text-white mr-2"
               alt="Contact Logo"
               aria-label="Contact Logo"
