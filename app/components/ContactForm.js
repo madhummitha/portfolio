@@ -26,6 +26,7 @@ const ContactForm = ({ formData, setFormData, handleChange, handleSubmit }) => {
               type="text"
               id="name"
               name="name"
+              placeholder="Jane Doe"
               value={formData.name}
               onChange={(e) => handleChange(e, formData, setFormData)}
               className="mt-1 p-2 border rounded-md w-full text-black"
@@ -42,6 +43,7 @@ const ContactForm = ({ formData, setFormData, handleChange, handleSubmit }) => {
               type="email"
               id="email"
               name="email"
+              placeholder="jane@gmail.com"
               value={formData.email}
               onChange={(e) => handleChange(e, formData, setFormData)}
               className="mt-1 p-2 border rounded-md w-full text-black"
@@ -59,6 +61,7 @@ const ContactForm = ({ formData, setFormData, handleChange, handleSubmit }) => {
               type="tel"
               id="message"
               name="message"
+              placeholder="Hey! I would like to discuss a project with you."
               value={formData.message}
               onChange={(e) => handleChange(e, formData, setFormData)}
               className="mt-1 p-2 border rounded-md w-full text-black"

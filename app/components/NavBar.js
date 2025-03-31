@@ -8,7 +8,7 @@ const Navbar = () => {
         <Link href="/" className="text-white text-lg font-semibold">
           <div className="text-white">
             <Image
-              src="/images/logo-img.png"
+              src="/images/M.png"
               alt="logo image"
               width={60}
               height={60}

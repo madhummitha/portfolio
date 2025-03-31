@@ -32,6 +32,16 @@ const About = () => {
                   {project.title}
                 </h3>
                 <p className="text-sm text-center">{project.description}</p>
+                <div className="flex justify-center mt-2 space-x-2">
+                  {project.techStack.map((tech, index) => (
+                    <span
+                      key={index}
+                      className="bg-gradient-to-r from-purple-700 to-purple-900 text-white px-2 py-1 rounded text-xs"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </a>
             </div>
           ))}

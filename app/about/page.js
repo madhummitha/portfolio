@@ -6,10 +6,13 @@ import {
   FaFileLines,
   FaGithub,
   FaJava,
+  FaPython,
 } from "react-icons/fa6";
 import {
   SiAmazonaws,
+  SiCsharp,
   SiDocker,
+  SiDotnet,
   SiFigma,
   SiGithubactions,
   SiGoogleanalytics,
@@ -74,6 +77,14 @@ const About = () => {
                   <FaDatabase className="text-l text-purple-300" />
                   <span className="ml-2">SQL</span>
                 </div>
+                <div className="flex items-center">
+                  <FaPython className="text-l text-purple-300" />
+                  <span className="ml-2">Python</span>
+                </div>
+                <div className="flex items-center">
+                  <SiCsharp className="text-l text-purple-300" />
+                  <span className="ml-2">.NET Core</span>
+                </div>
               </div>
             </div>
 
@@ -133,7 +144,7 @@ const About = () => {
         </div>
 
         <div className="flex justify-center space-x-4 mb-8">
-          <Link
+          {/* <Link
             href="/contact"
             className="bg-purple-900 text-white p-2 rounded-md flex items-center"
           >
@@ -143,7 +154,7 @@ const About = () => {
               aria-label="Contact Logo"
             />
             Know more?
-          </Link>
+          </Link> */}
           <a
             href="/docs/Madhummitha R - Resume.pdf"
             target="_blank"
