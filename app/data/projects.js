@@ -3,16 +3,16 @@ const projects = [
     id: 1,
     title: "Areen Order Hub",
     description: "An E - Commerce platform built with MERN Stack.",
-    image: "/images/Areen.png",
-    link: "",
+    image: "/images/Areen Order Hub.png",
+    link: "/projects/areen-order-hub",
     techStack: ["MERN", "ECommerce", "Shopify"],
   },
   {
     id: 2,
     title: "Areen Finance",
     description: "A finance management tool",
-    image: "/images/Areen.png",
-    link: "",
+    image: "/images/Areen Fin.png",
+    link: "/projects/areen-finance",
     techStack: ["MERN", "Finance"],
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     title: "Hiring Management System",
     description: "A hiring management system built with MERN Stack.",
     image: "/images/Hikers.png",
-    link: "/docs/HR CRM.pdf",
+    link: "/projects/hikers",
     techStack: ["MERN", "HRMS"],
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     title: "Bulk SMS",
     description: "A Service to process Bulk SMS using Sinch.",
     image: "/images/sms.png",
-    link: "/docs/Bulk SMS Project.pdf",
+    link: "/projects/bulk-sms",
     techStack: [".Net Core", "Sinch", "SQL"],
   },
   // {
@@ -52,7 +52,7 @@ const projects = [
     title: "Buy N Bill",
     description: "An E - Commerce platform built with MERN Stack.",
     image: "/images/BNB.png",
-    link: "",
+    link: "/projects/bnb",
     techStack: ["MERN", "ECommerce", "Shopify"],
   },
 ];

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-900 pr-4 fixed w-full top-0 z-50">
+    <nav className="bg-black pr-4 fixed w-full top-0 z-50">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <Link href="/" className="text-white text-lg font-semibold">
           <div className="text-white">
@@ -19,22 +19,34 @@ const Navbar = () => {
         <div>
           <ul className="font-medium flex space-x-4">
             <li>
-              <Link href="/" className="text-white p-2">
+              <Link
+                href="/"
+                className="text-white p-2 hover:text-purple-200 transition-colors duration-200"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/about" className="text-white p-2">
+              <Link
+                href="/about"
+                className="text-white p-2 hover:text-purple-200 transition-colors duration-200"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link href="/projects" className="text-white p-2">
+              <Link
+                href="/projects"
+                className="text-white p-2 hover:text-purple-200 transition-colors duration-200"
+              >
                 Projects
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="text-white p-2">
+              <Link
+                href="/contact"
+                className="text-white p-2 hover:text-purple-200 transition-colors duration-200"
+              >
                 Contact
               </Link>
             </li>
@@ -42,7 +54,7 @@ const Navbar = () => {
               <Link
                 href="https://madhummitha-blog.vercel.app/"
                 target="_blank"
-                className="text-white p-2"
+                className="text-white p-2 hover:text-purple-100 transition-colors duration-200"
               >
                 Blog
               </Link>
@@ -50,6 +62,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      <hr className="border-t-[0.5px] border-purple-100/30" />
     </nav>
   );
 };

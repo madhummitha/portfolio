@@ -9,7 +9,6 @@ export async function POST(req) {
   const body = await req.json();
 
   const { name, email, message } = body;
-  console.log("req body logging", body);
 
   try {
     sendEmail(body);

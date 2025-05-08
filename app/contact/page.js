@@ -30,7 +30,6 @@ const handleSubmit = async (e, formData, setFormData) => {
   e.preventDefault();
 
   try {
-    console.log("inside try", formData);
     await axios.post("/api/contact", formData);
     setFormData({
       name: "",

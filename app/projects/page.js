@@ -3,11 +3,12 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { FaArrowDown } from "react-icons/fa6";
 import projects from "../data/projects";
+import Link from "next/link";
 
 const About = () => {
   const [showAll, setShowAll] = useState(false);
 
-  const visibleProjects = showAll ? projects : projects.slice(0, 3);
+  const visibleProjects = showAll ? projects : projects.slice(0, 6);
 
   return (
     <div>
@@ -19,7 +20,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-gradient-to-r from-purple-400 to-pink-800 bg-clip-text text-transparent">
           {visibleProjects.map((project) => (
             <div key={project.id} className="mb-8">
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <Link href={project.link}>
                 <Image
                   width={400}
                   height={400}
@@ -31,23 +32,23 @@ const About = () => {
                 <h3 className="text-lg font-semibold mb-2 text-center">
                   {project.title}
                 </h3>
-                <p className="text-sm text-center">{project.description}</p>
-                <div className="flex justify-center mt-2 space-x-2">
-                  {project.techStack.map((tech, index) => (
-                    <span
-                      key={index}
-                      className="bg-gradient-to-r from-purple-700 to-purple-900 text-white px-2 py-1 rounded text-xs"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </a>
+              </Link>
+              <p className="text-sm text-center">{project.description}</p>
+              <div className="flex justify-center mt-2 space-x-2">
+                {project.techStack.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="bg-gradient-to-r from-purple-700 to-purple-900 text-white px-2 py-1 rounded text-xs"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
           ))}
         </div>
 
-        {!showAll && (
+        {/* {!showAll && (
           <div className="flex justify-center mt-6">
             <button
               onClick={() => setShowAll(true)}
@@ -57,7 +58,7 @@ const About = () => {
               <FaArrowDown className="text-l" />
             </button>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );
